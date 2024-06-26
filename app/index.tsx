@@ -4,8 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./HomeScreen";
 import AlunoScreen from "./AlunoScreen";
 import CoordenacaoScreen from "./CoordenacaoScreen";
-import NotasAlunos from "@/components/NotasAlunos";
 import BoletimAlunos from "@/components/BoletimAlunos";
+import AlunoNotaScreen from "./AlunoNotaScreen";
 
 export default function Index() {
   const Stack = createNativeStackNavigator();
@@ -25,8 +25,8 @@ export default function Index() {
         />
         <Stack.Screen
           name="NotasAlunos"
-          component={NotasAlunos}
-          //options={{ headerShown: false }}
+          component={AlunoNotaScreen}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="BoletimAlunos"

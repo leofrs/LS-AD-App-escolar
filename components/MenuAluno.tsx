@@ -3,6 +3,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
 import NotasAlunos from "./NotasAlunos";
 import BoletimAlunos from "./BoletimAlunos";
+import AlunoScreen from "@/app/AlunoScreen";
 
 export default function MenuAluno() {
   const navigation = useNavigation();
@@ -25,7 +26,7 @@ export default function MenuAluno() {
           alignItems: "center",
         }}
       >
-        <Pressable>
+        <Pressable onPress={() => navigation.navigate(AlunoScreen)}>
           <Text style={{ color: "white" }}>Inicio</Text>
         </Pressable>
 
